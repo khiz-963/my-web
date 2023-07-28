@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entertainment</title>
+    <link rel="stylesheet"href="./css/link1.css">
+    <style>
+        
+        header{background-color:grey;height:200px;}
+        nav ul li{display:inline;margin:15px;}
+        h2{
+            text-shadow: 5px 5px 10px rgb(0,255,30),10px 10px 20px yellow;
+        }
+    </style>
+    <script>
+        function jfun1()
+        {
+            //alert("Just for Testing")
+            name=frm1.t1.value;
+            designation=frm1.t2.value;
+            //email=frm1.t3.value;
+            //location=frm1.t4.value;
+            if(name=="")
+            {
+                alert("Please enter the Name")
+                return false;
+            }
+           /*else{
+                alert(" Go ahead")
+                return true;
+            }*/
+            else if(designation=="")
+            {
+                alert("Please enter designation")
+                return false;
+            }
+            
+            else{
+                alert("Go Ahead")
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header style="Background-image:url(./images/1.png);">
+        <h1>Entertainment</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li> 
+            <li><a href="Music.html">Music</a></li>
+            <li><a href="Sports.html">Sports</a></li>
+            <li><a href="Dance.html">Dance</a></li> 
+            <li><a href="Registration.html">Registration</a></li> 
+            <li><a href="Contact.html">Contact us</a></li>
+            
+        </ul>
+    </nav>
+    <h3>Made in India</h3>
+    <center>
+    <div style="background-color:darkgrey;border-radius:30px;width:50%;">
+        <h2>Registration page</h2>
+        <form name="frm1" onsubmit="return jfun1()" action="thanks.html">
+            <pre>
+        Name            <input type="text" name="t1" placeholder="Your Name Here" ><br>
+        Designation     <input type="text" name="t2" placeholder="Your Designtion Here" ><br>
+        Email           <input type="text" name="t3" placeholder="Your Email Here" ><br>
+        Location        <input type="text" name="t4" placeholder="Your Location Here" ><br>
+        <input type="Submit" value="Register"> 
+    </pre>
+        </form>
+    </div>
+</center>
+    <div style="height:400px"></div>
+    <footer>
+        <p>Website developed by:Khizra Fathima</p>
+    </footer>
+</body>
+</html>

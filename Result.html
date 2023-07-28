@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entertainment</title>
+    <link rel="stylesheet"href="./css/link1.css">
+    <style>
+        
+        header{background-color:grey;height:200px;}
+        nav ul li{display:inline;margin:15px;}
+    </style>
+    <script>
+        function jfun1()
+        {
+          var m=parseInt(frm1.t2.value);
+          var e=parseInt(frm1.t3.value);
+          var c=parseInt(frm1.t4.value);
+          var tmarks=m+e+c;
+          frm1.t5.value=tmarks;
+          var pmarks=tmarks/3;
+          frm1.t6.value=pmarks;
+          var max;
+          if(m>e&&m>c){
+            max=m;
+          }
+          else if(e>m && e>c)
+          {
+            max=e;
+          }
+          else
+          {
+            max=c;
+          }
+          frm1.t7.value=max;
+        }
+    </script>
+    </head>
+    <body>
+        <header style="Background-image:url(./images/1.png);">
+            <h1>Entertainment</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li> 
+                <li><a href="Music.html">Music</a></li>
+                <li><a href="Sports.html">Sports</a></li>
+                <li><a href="Dance.html">Dance</a></li> 
+                <li><a href="Gallery.html">Gallery</a></li> 
+                <li><a href="Registration.html">Registration</a></li> 
+                <li><a href="Result.html">Result</a></li> 
+                <li><a href="Contact.html">Contact us</a></li>
+                
+            </ul>
+        </nav>
+        
+            <div style="background-color:darkgrey;border-radius:30px;width:100%;">
+                <h2>Student Marks</h2>
+                <form name="frm1" onsubmit="return jfun1()" action="thanks.html">
+                    <pre>
+                        
+                Name            <input type="text" name="t1" placeholder="Your Name Here" ><br>
+                Marks:
+                Maths           <input type="text" name="t2" placeholder="Your Maths marks Here" >  English           <input type="text" name="t3" placeholder="Your English marks Here" >  Computer        <input type="text" name="t4" placeholder="Your Computer marks Here" ><br>
+                Result:
+                Total  Marks    <input type="text" name="t5"  >  %Marks            <input type="text" name="t6"  >  Max Marks       <input type="text" name="t7" ><br>
+                <input type="button" value="Result" onclick="jfun1()"|>
+         
+            </pre>
+                </form>
+            </div>
+        
+        <div style="height:400px"></div>
+        <footer>
+            <p>Website developed by:Khizra Fathima</p>
+        </footer>
+    </body>
+    </html>
